@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D61BAC55296447CD006F5114 /* AVAdsPlayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = D61BAC54296447CD006F5114 /* AVAdsPlayer.docc */; };
-		D61BAC5B296447CD006F5114 /* AVAdsPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61BAC50296447CD006F5114 /* AVAdsPlayer.framework */; };
 		D61BAC60296447CD006F5114 /* AVAdsPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BAC5F296447CD006F5114 /* AVAdsPlayerTests.swift */; };
 		D61BAC61296447CD006F5114 /* AVAdsPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D61BAC53296447CD006F5114 /* AVAdsPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61BAC6B296448A4006F5114 /* AdsPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BAC6A296448A4006F5114 /* AdsPlayerView.swift */; };
+		D61BAC6D29644974006F5114 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BAC6C29644974006F5114 /* UIKitExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D61BAC50296447CD006F5114 /* AVAdsPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVAdsPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D618776829657FD300A9D5F6 /* AVAdsPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVAdsPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61BAC53296447CD006F5114 /* AVAdsPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAdsPlayer.h; sourceTree = "<group>"; };
 		D61BAC54296447CD006F5114 /* AVAdsPlayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AVAdsPlayer.docc; sourceTree = "<group>"; };
-		D61BAC5A296447CD006F5114 /* AVAdsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVAdsPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61BAC5A296447CD006F5114 /* AVAdsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AVAdsPlayerTests.xctest; path = "/Users/daraz/Desktop/AVAdsPlayer/build/Debug-iphoneos/AVAdsPlayerTests.xctest"; sourceTree = "<absolute>"; };
 		D61BAC5F296447CD006F5114 /* AVAdsPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAdsPlayerTests.swift; sourceTree = "<group>"; };
+		D61BAC6A296448A4006F5114 /* AdsPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsPlayerView.swift; sourceTree = "<group>"; };
+		D61BAC6C29644974006F5114 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,29 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61BAC5B296447CD006F5114 /* AVAdsPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D618776529657FC000A9D5F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D61BAC46296447CD006F5114 = {
 			isa = PBXGroup;
 			children = (
 				D61BAC52296447CD006F5114 /* AVAdsPlayer */,
 				D61BAC5E296447CD006F5114 /* AVAdsPlayerTests */,
-				D61BAC51296447CD006F5114 /* Products */,
+				D618776529657FC000A9D5F6 /* Frameworks */,
+				D618776829657FD300A9D5F6 /* AVAdsPlayer.framework */,
 			);
-			sourceTree = "<group>";
-		};
-		D61BAC51296447CD006F5114 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D61BAC50296447CD006F5114 /* AVAdsPlayer.framework */,
-				D61BAC5A296447CD006F5114 /* AVAdsPlayerTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D61BAC52296447CD006F5114 /* AVAdsPlayer */ = {
@@ -73,6 +74,8 @@
 			children = (
 				D61BAC53296447CD006F5114 /* AVAdsPlayer.h */,
 				D61BAC54296447CD006F5114 /* AVAdsPlayer.docc */,
+				D61BAC6A296448A4006F5114 /* AdsPlayerView.swift */,
+				D61BAC6C29644974006F5114 /* UIKitExtension.swift */,
 			);
 			path = AVAdsPlayer;
 			sourceTree = "<group>";
@@ -114,7 +117,7 @@
 			);
 			name = AVAdsPlayer;
 			productName = AVAdsPlayer;
-			productReference = D61BAC50296447CD006F5114 /* AVAdsPlayer.framework */;
+			productReference = D618776829657FD300A9D5F6 /* AVAdsPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D61BAC59296447CD006F5114 /* AVAdsPlayerTests */ = {
@@ -162,7 +165,7 @@
 				Base,
 			);
 			mainGroup = D61BAC46296447CD006F5114;
-			productRefGroup = D61BAC51296447CD006F5114 /* Products */;
+			productRefGroup = D61BAC46296447CD006F5114;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -194,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61BAC6D29644974006F5114 /* UIKitExtension.swift in Sources */,
+				D61BAC6B296448A4006F5114 /* AdsPlayerView.swift in Sources */,
 				D61BAC55296447CD006F5114 /* AVAdsPlayer.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -396,6 +401,7 @@
 		D61BAC68296447CD006F5114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2257RMQ4S4;
@@ -412,6 +418,7 @@
 		D61BAC69296447CD006F5114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2257RMQ4S4;
