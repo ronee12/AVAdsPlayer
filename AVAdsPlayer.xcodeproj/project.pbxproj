@@ -28,10 +28,11 @@
 		D618776829657FD300A9D5F6 /* AVAdsPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVAdsPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61BAC53296447CD006F5114 /* AVAdsPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAdsPlayer.h; sourceTree = "<group>"; };
 		D61BAC54296447CD006F5114 /* AVAdsPlayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AVAdsPlayer.docc; sourceTree = "<group>"; };
-		D61BAC5A296447CD006F5114 /* AVAdsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AVAdsPlayerTests.xctest; path = "/Users/daraz/Desktop/AVAdsPlayer/build/Debug-iphoneos/AVAdsPlayerTests.xctest"; sourceTree = "<absolute>"; };
 		D61BAC5F296447CD006F5114 /* AVAdsPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAdsPlayerTests.swift; sourceTree = "<group>"; };
 		D61BAC6A296448A4006F5114 /* AdsPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsPlayerView.swift; sourceTree = "<group>"; };
 		D61BAC6C29644974006F5114 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		D65AC809296A45270063E5B4 /* AVAdsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVAdsPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65AC80A296A47770063E5B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				D61BAC5E296447CD006F5114 /* AVAdsPlayerTests */,
 				D618776529657FC000A9D5F6 /* Frameworks */,
 				D618776829657FD300A9D5F6 /* AVAdsPlayer.framework */,
+				D65AC809296A45270063E5B4 /* AVAdsPlayerTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +77,7 @@
 				D61BAC53296447CD006F5114 /* AVAdsPlayer.h */,
 				D61BAC54296447CD006F5114 /* AVAdsPlayer.docc */,
 				D61BAC6A296448A4006F5114 /* AdsPlayerView.swift */,
+				D65AC80A296A47770063E5B4 /* Assets.xcassets */,
 				D61BAC6C29644974006F5114 /* UIKitExtension.swift */,
 			);
 			path = AVAdsPlayer;
@@ -135,7 +138,7 @@
 			);
 			name = AVAdsPlayerTests;
 			productName = AVAdsPlayerTests;
-			productReference = D61BAC5A296447CD006F5114 /* AVAdsPlayerTests.xctest */;
+			productReference = D65AC809296A45270063E5B4 /* AVAdsPlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
