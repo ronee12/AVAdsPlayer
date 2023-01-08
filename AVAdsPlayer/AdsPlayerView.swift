@@ -357,6 +357,9 @@ public class AdsPlayerView: UIView {
         totalTimeStamp.anchor(left: playerView.leftAnchor, bottom: playerView.bottomAnchor, paddingLeft: 20, paddingBottom: 10, width: 50)
         
         sponsoredLabel.anchor(top: container.topAnchor, left: container.leftAnchor, paddingTop: 20, paddingLeft: 20)
+        
+        progressView.anchor(top: playerView.bottomAnchor, left: playerView.leftAnchor, right: playerView.rightAnchor, height: 5)
+        
     }
     
     required init?(coder: NSCoder) {
